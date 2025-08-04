@@ -9,10 +9,10 @@ from customer import Customer
 class TestBankApplication(unittest.TestCase):
 
     def setUp(self):
-        self.credit_account = CreditAccount(123, balance=0, credit_limit=500)
-        self.debit_account = DebitAccount(234, balance=100)
-        self.hybrid_account = HybridAccount(567, balance=50, credit_limit=300)
-        self.customer = Customer(345, "Arif")
+        self.credit_account = CreditAccount(1234, balance=0, credit_limit=500)
+        self.debit_account = DebitAccount(2343, balance=100)
+        self.hybrid_account = HybridAccount(5675, balance=50, credit_limit=300)
+        self.customer = Customer(3454, "Arif")
 
     def test_credit_account_withdraw_limit(self):
         self.credit_account.withdraw(300)
