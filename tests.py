@@ -1,10 +1,11 @@
+import os
 import unittest
 from credit_account import CreditAccount
 from debit_account import DebitAccount
 from hybrid_account import HybridAccount
 from customer import Customer
 
-
+os.environ["DATA_FILE"] = "test_data.json"
 
 class TestBankApplication(unittest.TestCase):
 
@@ -41,9 +42,9 @@ class TestBankApplication(unittest.TestCase):
 
     def test_customer_add_and_find_account(self):
         self.customer.add_account(self.credit_account)
-        found_account = self.customer.find_account(123)
+        found_account = self.customer.find_account(1234)
         self.assertIsNotNone(found_account)
-        self.assertEqual(found_account.account_number, 123)
+        self.assertEqual(found_account.account_number, 1234)
 
    
 if __name__ == "__main__":
