@@ -5,7 +5,6 @@ from debit_account import DebitAccount
 from hybrid_account import HybridAccount
 from customer import Customer
 
-os.environ["DATA_FILE"] = "test_data.json"
 
 class TestBankApplication(unittest.TestCase):
 
@@ -46,6 +45,6 @@ class TestBankApplication(unittest.TestCase):
         self.assertIsNotNone(found_account)
         self.assertEqual(found_account.account_number, 1234)
 
-   
+
 if __name__ == "__main__":
     unittest.main()

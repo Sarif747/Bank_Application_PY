@@ -1,13 +1,36 @@
 [
     {
-        "customer_id": 345,
+        "customer_id": 9740,
         "name": "Arif",
         "accounts": [
             {
                 "type": "CreditAccount",
-                "account_number": 123,
+                "account_number": 9582,
+                "balance": -300,
+                "credit_limit": 1000
+            }
+        ]
+    },
+    {
+        "customer_id": 5487,
+        "name": "jack",
+        "accounts": [
+            {
+                "type": "DebitAccount",
+                "account_number": 8527,
+                "balance": 300
+            }
+        ]
+    },
+    {
+        "customer_id": 3044,
+        "name": "mike",
+        "accounts": [
+            {
+                "type": "HybridAccount",
+                "account_number": 1333,
                 "balance": 0,
-                "credit_limit": 500
+                "credit_limit": 1000
             }
         ]
     }
